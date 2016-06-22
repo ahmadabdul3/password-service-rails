@@ -1,0 +1,28 @@
+.form-box {
+  width: 300px;
+  position: relative;
+  height: 1px;
+  margin: 0 auto;
+
+
+  .form.log-in-box {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    z-index: 5;
+    opacity: 0;
+    width: 260px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 3px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ccc;
+    transition: top 0.2s linear, opacity 0.2s linear;
+  }
+  .form.log-in-box.visible {
+    top: 10px;
+    opacity: 1;
+    transition: top 0.2s linear 1s, opacity 0.2s linear 1s;
+  }
+
+}

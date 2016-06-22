@@ -1,0 +1,40 @@
+.form {
+  text-align: center;
+  .row {
+    padding: 3px 0;
+
+    label.input {
+      min-width: 100px;
+      text-align: right;
+      margin-right: 5px;
+    }
+    label.input.right {
+      text-align: right;
+    }
+    label.input.left {
+      text-align: left;
+    }
+
+    input ~ .input-message {
+      font-size: 11px;
+      display: block;
+      text-align: center;
+      color: #ccc;
+      margin-top: 3px;
+      max-height: 25px;
+      transition: max-height 0.3s linear 0.1s;
+      webkit-transition: max-height 0.3s linear 0.1s;
+    }
+    input ~ .input-message.hidden {
+      max-height: 0;
+      margin-top: 0;
+      overflow: hidden;
+      transition: max-height 0.3s linear, margin 0.1s linear 0.35s;
+      webkit-transition: max-height 0.3s linear, margin 0.1s linear 0.35s;;
+    }
+
+  }
+  .row.submit {
+    padding-top: 15px;
+  }
+}

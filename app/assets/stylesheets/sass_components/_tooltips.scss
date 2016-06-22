@@ -1,0 +1,61 @@
+@import 'colors';
+
+.tooltip-box {
+  
+  display: inline-block;
+  position: relative;
+  cursor: default;
+}
+.tooltip-box .text {
+  font-size: 14px;
+}
+
+.tooltip-box .tooltip-container {
+  top: 0;
+  position: absolute;
+  left: 100%;
+  z-index: 20;
+  margin-left: 15px;
+  text-align: left;
+  width: 120px;
+}
+.tooltip-box .tooltip-container .tooltip {
+    opacity: 0;
+    display: inline-block;
+    vertical-align: middle;
+    transition: opacity 0.4s ease 0.3s;
+    
+    
+}
+.tooltip-box .tooltip-container .tooltip .text {
+    max-width: 120px;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 12px;
+    padding: 5px 10px;
+    background-color: white;
+    border: 1px solid #ddd;
+    color: white;
+    border-radius: 2px;
+}
+
+.tooltip-box .tooltip-container .tooltip.under .arrow {
+    display: inline-block;
+    vertical-align: middle;
+    width: 6px;
+    height: 6px;
+    margin-right: -4px;
+    background-color: white;
+    -webkit-transform: rotate(45deg);
+    border-left: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+  
+}
+.tooltip-box .tooltip-container .tooltip.visible {
+  opacity: 1;
+  transition: opacity 0.2s ease 0.3s;
+}
+
+
+
+

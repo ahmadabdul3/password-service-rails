@@ -1,0 +1,63 @@
+@import 'colors';
+
+.button {
+    letter-spacing: 1px;
+    outline: none;
+    background-color: white;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 5px 10px;
+    margin: 5px;
+    border: 1px solid #ddd;
+    color: $dark-gray-1;
+    border-radius: 2px;
+    transition: background-color 0.2s linear, color 0.2s linear;
+    -webkit-transition: background-color 0.2s linear, color 0.2s linear;
+}
+    .button:hover {
+        cursor: pointer;
+        background-color: #ddd;
+        color: black;
+        transition: background-color 0.2s linear, color 0.2s linear;
+        -webkit-transition: background-color 0.2s linear, color 0.2s linear;
+    }
+
+.button.blue {
+    border: 1px solid $light-blue-2;
+    color: $dark-blue-2;
+}
+.button.blue:hover {
+    background-color: $dark-blue-2;
+    border-color: $dark-blue-2;
+    color: white;
+}
+
+.button.green {
+    border: 1px solid $light-green-2;
+    color: $dark-green-1;
+}
+.button.green:hover {
+    background-color: $dark-green-1;
+    border-color: $dark-green-1;
+    color: white;
+}
+
+.button.red {
+    border: 1px solid $light-red-2;
+    color: $dark-red-1;
+}
+.button.red:hover {
+    background-color: $dark-red-1;
+    border-color: $dark-red-1;
+    color: white;
+}
+
+.button.orange {
+    border: 1px solid $light-orange-2;
+    color: $dark-orange-1;
+}
+.button.orange:hover {
+    background-color: $dark-orange-1;
+    border-color: $dark-orange-1;
+    color: white;
+}

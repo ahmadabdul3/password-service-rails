@@ -1,0 +1,41 @@
+@import 'colors';
+
+.link {
+    text-decoration: none;
+    color: $light-blue-1;
+    transition: color 0.15s linear;
+}
+.link:hover {
+    color: $dark-blue-2;
+    transition: color 0.15s linear;
+}
+
+.link.red {
+    color: $red;
+    transition: color 0.15s linear;
+}
+.link.red:hover {
+    color: $dark-red-2;
+    transition: color 0.15s linear;
+}
+
+.link.orange {
+    color: $orange;
+    transition: color 0.15s linear;
+}
+.link.orange:hover {
+    color: $dark-orange-2;
+    transition: color 0.15s linear;
+}
+
+.link.green {
+    color: $green;
+    transition: color 0.15s linear;
+}
+.link.green:hover {
+    color: $dark-green-2;
+    transition: color 0.15s linear;
+}
+.link:hover {
+    cursor: pointer;
+}

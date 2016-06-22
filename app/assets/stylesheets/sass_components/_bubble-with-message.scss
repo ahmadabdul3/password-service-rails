@@ -1,0 +1,44 @@
+
+@import 'colors';
+
+.bubble-with-message {
+    display: inline-block;
+    padding: 3px 10px;
+
+    .bubble {
+        display: inline-block;
+        vertical-align: middle;
+        border-radius: 100%;
+        margin: 0 2px;
+    }
+    .bubble.green {
+        background-color: $green;
+    }
+    .bubble.orange {
+        background-color: $orange;
+    }
+    .bubble.red {
+        background-color: $red;
+    }
+    .bubble.blue {
+        background-color: $blue;
+    }
+    .bubble.sm {
+        padding: 2px;
+    }
+    .bubble.md {
+        padding: 4px;
+    }
+    .bubble.lg {
+        padding: 8px;
+    }
+    label {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 2px;
+        color: gray;
+    }
+}
+.bubble-with-message.no-pad {
+    padding: 0;
+}

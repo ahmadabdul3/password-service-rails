@@ -1,0 +1,68 @@
+@import 'colors';
+
+.input, .select {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 5px;
+    border-radius: 3px;
+    outline: none;
+    background-color: white;
+    border: 1px solid #ccc;
+    transition: box-shadow 0.15s linear, border-color 0.15s linear;
+}
+@media (min-width: 0) and (max-width: 450px) {
+    .input, .select {
+        width: 85%;
+    }
+}
+.input:hover {
+    background-color: white;
+    border-color: #B3DCFF;
+    box-shadow: 0 0 4px 0px #B3DCFF;
+    transition: box-shadow 0.15s linear, border-color 0.15s linear;
+}
+.input:focus  {
+    background-color: white;
+    border-color: #4DAFFF;
+    box-shadow: 0 0 4px 0px #4DAFFF;
+    transition: box-shadow 0.15s linear, border-color 0.15s linear;
+}
+
+.input.required {
+    border-color: $light-orange-1;
+
+}
+.input.required:hover {
+    border-color: $light-orange-1;
+    box-shadow: 0 0 4px 0px $light-orange-1;
+}
+.input.required:focus {
+    border-color: $orange;
+    box-shadow: 0 0 4px 0px $orange;
+}
+
+.input.invalid {
+    border-color: $light-red-1;
+
+}
+.input.invalid:hover {
+    border-color: $light-red-1;
+    box-shadow: 0 0 4px 0px $light-red-1;
+}
+.input.invalid:focus {
+    border-color: $red;
+    box-shadow: 0 0 4px 0px $red;
+}
+
+.input.valid {
+    border-color: $light-green-1;
+
+}
+.input.valid:hover {
+    border-color: $light-green-1;
+    box-shadow: 0 0 4px 0px $light-green-1;
+}
+.input.valid:focus {
+    border-color: $green;
+    box-shadow: 0 0 4px 0px $green;
+}
